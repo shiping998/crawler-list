@@ -4,3 +4,4 @@
 # douban250.py爬取豆瓣top250的图书，作者，评分，出版社，评分，简介
 # singnin_douban.py 模拟登陆豆瓣
 # tianlong.py下载有声小说天龙八部
+# weather.py获取城市空气质量
