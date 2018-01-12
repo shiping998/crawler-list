@@ -7,5 +7,5 @@
 ## weather.py获取城市空气质量
 ## duzhe.py批量获取读者文章
 ## movie.py 爬取豆瓣电影top250
-## 图形化分析movie250.py爬取下来的国家地区信息
+## country.py图形化分析movie250.py爬取下来的国家地区信息
 ![](http://ww1.sinaimg.cn/large/0060lm7Tly1fndknbgh4cj30ul0dvjsj.jpg)
