@@ -17,12 +17,13 @@ def get(url):
         data = {
             'title': title.text,
             'star': star.text,
-            'content':content.text.split('\xa0')[-3]
+            'content':content.text.split('\xa0')[-3].split(' ')[0]
         }
         print(data)
         movie.insert_one(data)
     # for content in contents:
-    #     print(content.text.split('\xa0')[-3])
+    #     m=content.text.split('\xa0')[-3]
+    #     print(m.split(' ')[0])
 def urls():
     url_list=[]
     for i in range(0,226,25):
