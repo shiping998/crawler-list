@@ -1,0 +1,25 @@
+﻿http://www.junlz.com/?p=994   mapreduce统计天龙八部小说词频本地实现
+
+http://192.168.199.204:50070
+http://192.168.199.204:8088/cluster
+/home/hadoop 有tlbbtestfile.txt
+hdfs dfs -put tlbbtestfile.txt /input/testinput.txt
+/usr/local/hadoop/sbin hadoop目录
+./start-all.sh	开启hadoop
+export PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin	设置hadoop环境变量
+
+hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar -mapper /home/hadoop/hadoopwordcount/mapper.py -reducer /home/hadoop/hadoopwordcount/reducer.py -input /input/testinput.txt -output /wordcountout -jobconf mapred.map.tasks=4 -jobconf mapred.reduce.tasks=2
+
+
+
+mkdir /tmp/output
+hdfs dfs -get /wordcountout/part-0000* /tmp/output
+ls /tmp/output/
+
+
+cat /tmp/output/part-00000 /tmp/output/part-00001 | awk '{if(length($1)>4) print $0}'>filtered.txt
+
+sort -rnk2,2 filtered.txt >sorted
+
+
+head -n 100 sorted
