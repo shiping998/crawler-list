@@ -10,9 +10,12 @@ def gettitle():
     data.encoding = data.apparent_encoding
     soup=BeautifulSoup(data.text,'lxml')
     title=soup.find_all('h2',{'class','entry-title'})
-    d=''
+    d='- '
     for i in title:
-        d=d+i.text+'\n'
+        if(not i==title[-1]):
+            d=d+i.text+'  \n- '
+        else:
+            d=d+i.text
     return d
 
 print(gettitle())
