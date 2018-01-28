@@ -8,5 +8,5 @@
 ## duzhe.py批量获取读者文章
 ## movie.py 爬取豆瓣电影top250
 ## country.py图形化分析movie250.py爬取下来的国家地区信息
-## movietell.py监测爱磁力网站的电影更新，有更新给自己发微信 使用server酱
 ![](http://ww1.sinaimg.cn/large/0060lm7Tly1fndknbgh4cj30ul0dvjsj.jpg)
+## movietell.py监测爱磁力网站的电影更新，有更新给自己发微信 使用server酱
