@@ -12,3 +12,4 @@
 ## movietell.py监测爱磁力网站的电影更新，有更新给自己发微信 使用server酱
 ## jinyong.py 利用正则表达式爬取金庸小说
 ## qiuke.py 利用正则表达式爬取糗事百科
+## doubancsv.py 爬取豆瓣读书top250，存到csv中
