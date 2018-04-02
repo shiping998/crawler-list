@@ -13,3 +13,4 @@
 ## jinyong.py 利用正则表达式爬取金庸小说
 ## qiuke.py 利用正则表达式爬取糗事百科
 ## doubancsv.py 爬取豆瓣读书top250，存到csv中
+## weathertell.py 每天爬取城市空气情况，有污染，通过微信报警
